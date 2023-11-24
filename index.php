@@ -110,6 +110,14 @@ padding: 14px 20px;
         .width {
                 width: 100%;
         }
+
+        input {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-duration: .15s;
+}
     </style>
 </head>
 
@@ -160,17 +168,23 @@ padding: 14px 20px;
 
             <div class="form-group">
                 <!-- <label for="name">Имя*</label> -->
-                <input type="text" id="name" name="f_name" placeholder="Имя*" required class="form-name">
+                <input type="text" id="name" name="f_name" placeholder="Имя*" required="" class="form-name">
             </div>
 
             <div class="form-group">
                 <!-- <label for="city">Город*</label> -->
-                <input type="text" id="city" name="city" placeholder="Город*" required class="intl-tel-input">
+                <input type="text" id="city" name="city" placeholder="Город*" required="" class="intl-tel-input">
             </div>
 
             <div class="form-group">
                 <!-- <label for="phone">Телефон*</label> --> 
-                <input type="tel" id="phone" name="phone" placeholder="Телефон*" class="intl-tel-input width" data-tel-input required>
+                <input type="tel" name="phone"
+                class="form-phone"
+                required="" 
+                autocomplete="off"
+                data-intl-tel-input-id="0" 
+                placeholder="Телефон*" 
+                >
             </div>
 
             <div class="form-text">
@@ -196,21 +210,6 @@ padding: 14px 20px;
 <!-- libphonenumber (зависимость intl-tel-input) -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
 
-<!-- <script>
-    $(document).ready(function () {
-        // Инициализация intlTelInput
-        var input = document.querySelector("#phone");
-        var iti = window.intlTelInput(input, {
-            initialCountry: "auto",
-            geoIpLookup: function (success, failure) {
-                $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
-                    var countryCode = (resp && resp.country) ? resp.country : "";
-                    success(countryCode);
-                });
-            },
-        });
-    });
-</script> -->
 <script src="./js/intlTellnput.js"></script>
 <script src="./js/utils.js"></script>
 <script src="./js/main.js"></script>
