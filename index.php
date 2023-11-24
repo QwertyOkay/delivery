@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/intlTelInput.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
         .header {
             height: 435px;
@@ -27,6 +30,7 @@
         body {
             padding-top: 56px;
             /* Высота хедера (56px) + отступ сверху */
+            /* background: #FBD800; */
         }
 
         .form-container {
@@ -72,7 +76,7 @@
         }
 
         .submit-button {
-            align-self: flex-end;
+            align-self: center;
             padding: 10px 20px;
             background-color: #007bff;
             /* Цвет кнопки */
@@ -84,6 +88,27 @@
 
         .navbar-light .navbar-toggler {
             border: none;
+        }
+
+        p {
+            margin-bottom: 0px;
+        }
+
+        .btn-primary {
+            border-radius: 4px;
+background: #FBD800;
+color: #181717;
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 100%; /* 18px */
+letter-spacing: 0.54px;
+padding: 14px 20px;
+        }
+
+        .width {
+                width: 100%;
         }
     </style>
 </head>
@@ -130,36 +155,68 @@
 
     <section>
         <!-- Форма -->
-        <div class="form-container">
+        <form class="form-container form-registration" action="./success.php?subid={subid}" method="post">
             <div class="form-header">Заголовок формы</div>
 
             <div class="form-group">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Введите ваше имя">
+                <!-- <label for="name">Имя*</label> -->
+                <input type="text" id="name" name="f_name" placeholder="Имя*" required class="form-name">
             </div>
 
             <div class="form-group">
-                <label for="city">Город:</label>
-                <input type="text" id="city" name="city" placeholder="Введите ваш город">
+                <!-- <label for="city">Город*</label> -->
+                <input type="text" id="city" name="city" placeholder="Город*" required class="intl-tel-input">
             </div>
 
             <div class="form-group">
-                <label for="phone">Телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Введите ваш номер телефона">
+                <!-- <label for="phone">Телефон*</label> --> 
+                <input type="tel" id="phone" name="phone" placeholder="Телефон*" class="intl-tel-input width" data-tel-input required>
             </div>
 
             <div class="form-text">
                 <!-- Текстовый блок -->
                 <p>Заполняя форму, я принимаю условия передачи информации</p>
-                <button class="submit-button">Submit</button>
+                <button class="submit-button" type="submit">Продолжить</button>
             </div>
-        </div>
+        </form>
     </section>
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- jQuery (необходим intl-tel-input) -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+
+<!-- intl-tel-input -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+
+<!-- libphonenumber (зависимость intl-tel-input) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+<!-- <script>
+    $(document).ready(function () {
+        // Инициализация intlTelInput
+        var input = document.querySelector("#phone");
+        var iti = window.intlTelInput(input, {
+            initialCountry: "auto",
+            geoIpLookup: function (success, failure) {
+                $.get("https://ipinfo.io", function () {}, "jsonp").always(function (resp) {
+                    var countryCode = (resp && resp.country) ? resp.country : "";
+                    success(countryCode);
+                });
+            },
+        });
+    });
+</script> -->
+<script src="./js/intlTellnput.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/main.js"></script>
+
+
+
 
 </body>
 
