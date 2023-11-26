@@ -12,7 +12,7 @@ function initForm() {
 
     for (let i = 0; i < inputs.length; i++) {
         let iti = intlTelInput(inputs[i], {
-            utilsScript: '/js/utils.js',
+            utilsScript: './intlTelInput/js/utils.js',
             nationalMode: true,
             defaultCountry: 'auto',
             excludeCountries: [""],
@@ -44,15 +44,39 @@ const getUserIp = data => {
     userIp.forEach(item => item.setAttribute('value', data.ip));
 }
 
+// $('.form-registration').submit(function (e) {
+//     e.preventDefault();
+//     let datas = $(this).serialize();
+
+//     this.querySelector('button[type="submit"]').innerHTML = '<img src="../js/preloader.gif">'
+
+//     $.ajax({
+//         type: 'POST',
+//         dataType: 'json',
+//         crossDomain: true,
+//         url: `../post.php`,
+//         data: {
+//             "formData": datas
+//         },
+//         success: function (response) {
+//             if (response.status.result === true) {
+//                 window.localStorage.setItem('link', response.status.link)
+//             } else {
+//                 window.localStorage.setItem('link', '')
+//             }
+
+//             window.location.href = `thankyou.php`
+//         }
+//     });
+// });
+
 function check(item) {
+    // let checkEmail = item.querySelector('input[type="email"]').dataset.valid
+    let checkTel = item.querySelector('input[type="tel"]').dataset.valid
 
-    let checkTel = item.querySelector('input[type="tel"]');
-
-    if (checkTel) {
-        checkTel.dataset.valid === "true"
-            ? item.querySelector('[type="submit"]').removeAttribute('disabled')
-            : item.querySelector('[type="submit"]').setAttribute('disabled', '');
-    }
+    checkTel === "true"
+        ? item.querySelector('[type="submit"]').removeAttribute('disabled')
+        : item.querySelector('[type="submit"]').setAttribute('disabled', '')
 }
 
 function checkValidation(target, item) {
@@ -60,27 +84,43 @@ function checkValidation(target, item) {
 
         case 'f_name':
         case 'l_name':
-        case 'city' :   
             target.value = target.value.split(' ').join('');
             target.value !== '' && rv_name.test(target.value) ?
                 validInput(target) :
                 invalidInput(target)
             break;
 
-        case 'phone':
-            var input = document.querySelector('.form-phone');
-            if (input) {
-                var iti = window.intlTelInput(input);
-                if (iti.isValidNumber()) {
-                    validInput(target);
-                } else {
-                    invalidInput(target);
-                }
-            }
-            break;
-    }
+        // case 'email':
+        //     target.setAttribute('data-valid', rv_email.test(target.value))
+        //     check(item)
+        //     target.value !== '' && rv_email.test(target.value) ?
+        //         validInput(target) :
+        //         invalidInput(target)
+        //     break;
 
-    check(item);
+        case 'phone':
+            let checkNum = (phoneArr[item.dataset.id].isValidNumber());
+            fullPhone[item.dataset.id].setAttribute('value', phoneArr[item.dataset.id].getNumber())
+            target.setAttribute('data-valid', checkNum)
+            check(item)
+            checkNum ?
+                validInput(target) :
+                invalidInput(target)
+            break;
+
+        // default:
+        //     target.length > 0 && target.value !== '' ?
+        //         validInput(target) :
+        //         invalidInput(target)
+        //     break;
+
+        default:
+    target.value.length > 0 ?
+        validInput(target) :
+        invalidInput(target)
+    break;
+
+    }
 }
 
 function validInput(element) {

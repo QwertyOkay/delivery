@@ -96,29 +96,22 @@
 
         .btn-primary {
             border-radius: 4px;
-background: #FBD800;
-color: #181717;
-font-family: Roboto;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 100%; /* 18px */
-letter-spacing: 0.54px;
-padding: 14px 20px;
+            background: #FBD800;
+            color: #181717;
+            font-family: Roboto;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 18px */
+            letter-spacing: 0.54px;
+            padding: 14px 20px;
         }
 
         .width {
                 width: 100%;
         }
-
-        input {
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
-    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
-    transition-duration: .15s;
-}
     </style>
+
 </head>
 
 <body>
@@ -163,56 +156,87 @@ padding: 14px 20px;
 
     <section>
         <!-- Форма -->
-        <form class="form-container form-registration" action="./success.php?subid={subid}" method="post">
+        <!-- <form class="form-container form-registration" action="./success.php?subid={subid}" method="post">
             <div class="form-header">Заголовок формы</div>
 
             <div class="form-group">
-                <!-- <label for="name">Имя*</label> -->
                 <input type="text" id="name" name="f_name" placeholder="Имя*" required="" class="form-name">
             </div>
 
             <div class="form-group">
-                <!-- <label for="city">Город*</label> -->
                 <input type="text" id="city" name="city" placeholder="Город*" required="" class="intl-tel-input">
             </div>
 
             <div class="form-group">
-                <!-- <label for="phone">Телефон*</label> --> 
                 <input type="tel" name="phone"
                 class="form-phone"
                 required="" 
                 autocomplete="off"
-                data-intl-tel-input-id="0" 
-                placeholder="Телефон*" 
+                data-intl-tel-input-id="0"  
                 >
             </div>
 
             <div class="form-text">
-                <!-- Текстовый блок -->
                 <p>Заполняя форму, я принимаю условия передачи информации</p>
                 <button class="submit-button" type="submit">Продолжить</button>
             </div>
-        </form>
+        </form> -->
+         <form class="form-registration" data-id="0" action="./success.php?subid={subid}" method="post" >
+                                                <div class="form-group">
+                                                    <input type="text" required="" placeholder="Имя*" name="f_name" class="form-name">
+                                                    <div class="invalid-feedback">Twoje imię jest zbyt krótkie (co
+                                                        najmniej 2 znaki)
+                                                    </div>
+                                                </div>
+
+                                                <!-- <div class="form-group">
+                                                    <input type="hidden" required="" value="" placeholder="Nazwisko" name="l_name" class="form-lastname">
+                                                    <div class="invalid-feedback">Twoje nazwisko jest zbyt krótkie (co
+                                                        najmniej 2 znaki)
+                                                    </div>
+                                                </div> -->
+                                                <!-- <div class="form-group">
+                                                    <input type="hidden" required="" placeholder="E-mail" name="email" class="form-email">
+                                                    <div class="invalid-feedback">Wprowadź swój prawdziwy adres e-mail
+                                                        (example@gmail.com)
+                                                    </div>
+                                                </div> -->
+                                                <div class="form-group">
+                                                    <input type="text" required="" placeholder="Город*" name="city" class="form-city">
+                                                    <div class="invalid-feedback">Пожалуйста, введите ваш город
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="tel" name="phone" class="form-phone" required="">
+                                                    <div class="invalid-feedback" style="width: 100%">Wprowadź swój
+                                                        pełny numer telefonu
+                                                    </div>
+                                                </div>
+
+                                                <button class="form-button" type="submit" disabled="">
+                                                    Utwórz darmowe konto
+                                                </button>
+                                                <input type="hidden" name="full-phone">
+                                                <!-- <input type="hidden" name="client_ip">
+                                                <input type="hidden" name="land_id">
+                                                <input type="hidden" name="id" value="1">
+                                                <input type="hidden" name="clickid" value="2949cgxira8vr615"> -->
+                                            </form>
+                                        
     </section>
+
+    <script src="./js/intlTellnput.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/main.js"></script>
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-    <!-- jQuery (необходим intl-tel-input) -->
-<!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
+   
 
-<!-- intl-tel-input -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
 
-<!-- libphonenumber (зависимость intl-tel-input) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
-
-<script src="./js/intlTellnput.js"></script>
-<script src="./js/utils.js"></script>
-<script src="./js/main.js"></script>
 
 
 
