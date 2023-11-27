@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/custom.css">
-        <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/intlTelInput.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
@@ -102,13 +102,14 @@
             font-size: 18px;
             font-style: normal;
             font-weight: 700;
-            line-height: 100%; /* 18px */
+            line-height: 100%;
+            /* 18px */
             letter-spacing: 0.54px;
             padding: 14px 20px;
         }
 
         .width {
-                width: 100%;
+            width: 100%;
         }
     </style>
 
@@ -181,64 +182,61 @@
                 <button class="submit-button" type="submit">Продолжить</button>
             </div>
         </form> -->
-         <form class="form-registration" data-id="0" action="./success.php?subid={subid}" method="post" >
-                                                <div class="form-group">
-                                                    <input type="text" required="" placeholder="Имя*" name="f_name" class="form-name">
-                                                    <div class="invalid-feedback">Twoje imię jest zbyt krótkie (co
-                                                        najmniej 2 znaki)
-                                                    </div>
-                                                </div>
 
-                                                <!-- <div class="form-group">
+        <form class="form-registration form-container" data-id="0" action="./success.php?subid={subid}" method="post">
+             <div class="form-header">Ваши контакты</div>
+            <div class="form-group">
+                <input type="text" required="" placeholder="Имя*" name="f_name" class="form-name">
+                <div class="invalid-feedback">Ваше имя слишком короткое (что
+                    минимум 2 символа)
+                </div>
+            </div>
+
+            <!-- <div class="form-group">
                                                     <input type="hidden" required="" value="" placeholder="Nazwisko" name="l_name" class="form-lastname">
                                                     <div class="invalid-feedback">Twoje nazwisko jest zbyt krótkie (co
                                                         najmniej 2 znaki)
                                                     </div>
                                                 </div> -->
-                                                <!-- <div class="form-group">
+            <!-- <div class="form-group">
                                                     <input type="hidden" required="" placeholder="E-mail" name="email" class="form-email">
                                                     <div class="invalid-feedback">Wprowadź swój prawdziwy adres e-mail
                                                         (example@gmail.com)
                                                     </div>
                                                 </div> -->
-                                                <div class="form-group">
-                                                    <input type="text" required="" placeholder="Город*" name="city" class="form-city">
-                                                    <div class="invalid-feedback">Пожалуйста, введите ваш город
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <input type="tel" name="phone" class="form-phone" required="">
-                                                    <div class="invalid-feedback" style="width: 100%">Wprowadź swój
-                                                        pełny numer telefonu
-                                                    </div>
-                                                </div>
+            <div class="form-group">
+                <input type="text" required="" placeholder="Город*" name="city" class="form-city">
+                <div class="invalid-feedback">Пожалуйста, введите ваш город
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="tel" name="phone" class="form-phone" required="">
+                <div class="invalid-feedback" style="width: 100%">Введите свой
+                    полный номер телефона
+                </div>
+            </div>
 
-                                                <button class="form-button" type="submit" disabled="">
+            <div class="form-text">
+                <p>Заполняя форму, я принимаю условия передачи информации</p>
+                <button class="submit-button" type="submit" disabled="">Продолжить</button>
+            </div>
+
+            <!-- <button class="form-button" type="submit" disabled="">
                                                     Utwórz darmowe konto
-                                                </button>
-                                                <input type="hidden" name="full-phone">
-                                                <!-- <input type="hidden" name="client_ip">
-                                                <input type="hidden" name="land_id">
-                                                <input type="hidden" name="id" value="1">
-                                                <input type="hidden" name="clickid" value="2949cgxira8vr615"> -->
-                                            </form>
-                                        
+                                                </button> -->
+            <input type="hidden" name="full-phone">
+        </form>
+
     </section>
 
     <script src="./js/intlTellnput.js"></script>
-<script src="./js/utils.js"></script>
-<script src="./js/main.js"></script>
+    <script src="./js/utils.js"></script>
+    <script src="./js/main.js"></script>
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
-   
-
-
-
-
 
 
 </body>

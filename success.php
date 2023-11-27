@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>DZIĘKUJĘ!</title>
+	<title>Спасибо!</title>
 	<meta charset="utf-8">
 	<meta name="robots" content="none">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -29,7 +29,7 @@
 			</div>
 			<div class="success-page__body">
 				<div class="success-page__body-wrapper">
-					<h3 class="success-page__text">Пожалуйста проверьте свои контактные данные:</h3>
+					<h3 class="success-page__text">Пожалуйста, проверьте свои контактные данные:</h3>
 					<div class="list-info">
 						<ul class="list-info__list">
 							<li class="list-info__item">
@@ -48,21 +48,20 @@
 <?php
 
 // declare valeus
-$f_name = urlencode(isset($_POST['f_name']) ? $_POST['f_name'] : 'undefind');
+$f_name = urlencode(isset($_POST['f_name']) ? $_POST['f_name'] : 'undefined');
 // $second_name = urlencode(isset($_POST['last_name']) ? $_POST['last_name'] : 'undefind');
 $full_name = $f_name;
-$phone = isset($_POST['phone']) ? $_POST['phone'] : 'undefind';
+$phone = isset($_POST['phone']) ? $_POST['phone'] : 'undefined';
 // $email = isset($_POST['email']) ? $_POST['email'] : 'undefind';
 
-$city = urlencode(isset($_POST['city']) ? $_POST['city'] : 'undefind');
+$city = urlencode(isset($_POST['city']) ? $_POST['city'] : 'undefined');
 // $social = isset($_POST['social']) ? $_POST['social'] : 'undefind';
 // $car = isset($_POST['car']) ? $_POST['car'] : '-';
-
-$subid = urlencode(isset($_GET['subid']) ? $_GET['subid'] : 'undefind');
 
 // declare tracking value 
 $referer = isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '';
 $parsedUrl = parse_url($referer);
+$subid = urlencode(isset($_GET['subid']) ? $_GET['subid'] : 'undefined');
 
 // if ($parsedUrl !== false && isset($parsedUrl['query'])) {
 //     parse_str($parsedUrl['query'], $queryParams);
