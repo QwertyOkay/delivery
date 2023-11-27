@@ -123,6 +123,7 @@
             /* 18px */
             letter-spacing: 0.54px;
             padding: 14px 20px;
+            border: none;
         }
 
         .width {
@@ -385,28 +386,69 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="image2.jpg" class="d-block w-100 slider-img" alt="Slide 2">
-                    <div class="carousel-caption d-none d-md-block slider-caption">
-                        <p>Отзыв 2</p>
-                        <p>Имя Фамилия</p>
-                        <p>Дата отзыва</p>
+                    <div class="shadowCustom">
+                        <img src="./images/2.png" class="d-block w-100 slider-img" alt="Slide 2">
+                        <img src="./images/Background.svg" class="slider__background" alt="">
                     </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                        <path
+                            d="M28.4375 28.4375L28.4375 56.875L3.8147e-06 56.875L1.2931e-06 28.0313C-4.11647e-07 8.53126 18.2812 6.09376 18.2812 6.09376L20.7187 11.7813C20.7187 11.7813 12.5937 13 10.9687 19.5C9.34375 24.375 12.5938 28.4375 12.5938 28.4375L28.4375 28.4375Z"
+                            fill="#FBD800" />
+                        <path
+                            d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
+                            fill="#FBD800" />
+                    </svg>
+                    <p class="slider__review">У нас в семье 6 детей, я самый старший, мы выросли в маленькой хрущевке и
+                        я всегда мечтал подарить маме и братьям новую просторную квартиру, конечно пришлось потрудиться,
+                        но уже через год я добился своей цели</p>
+                    <p class="slider__name">Константин Беляев</p>
+                    <p class="slider__date">Пользователь с Марта 2023</p>
                 </div>
-                <!-- Добавьте аналогичные блоки для остальных слайдов -->
+
+                <div class="carousel-item">
+                    <div class="shadowCustom">
+                        <img src="./images/3.png" class="d-block w-100 slider-img" alt="Slide 3">
+                        <img src="./images/Background.svg" class="slider__background" alt="">
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                        <path
+                            d="M28.4375 28.4375L28.4375 56.875L3.8147e-06 56.875L1.2931e-06 28.0313C-4.11647e-07 8.53126 18.2812 6.09376 18.2812 6.09376L20.7187 11.7813C20.7187 11.7813 12.5937 13 10.9687 19.5C9.34375 24.375 12.5938 28.4375 12.5938 28.4375L28.4375 28.4375Z"
+                            fill="#FBD800" />
+                        <path
+                            d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
+                            fill="#FBD800" />
+                    </svg>
+                    <p class="slider__review">Раньше я даже и мечтать не мог, что смогу позволить себе отпуск в Сочи,
+                        работал на заводе как проклятый от звонка до звонка. Теперь моя жизнь координально друг</p>
+                    <p class="slider__name">Григорий Марков</p>
+                    <p class="slider__date">Пользователь с Июня 2023</p>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="shadowCustom">
+                        <img src="./images/4.png" class="d-block w-100 slider-img" alt="Slide 4">
+                        <img src="./images/Background.svg" class="slider__background" alt="">
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                        <path
+                            d="M28.4375 28.4375L28.4375 56.875L3.8147e-06 56.875L1.2931e-06 28.0313C-4.11647e-07 8.53126 18.2812 6.09376 18.2812 6.09376L20.7187 11.7813C20.7187 11.7813 12.5937 13 10.9687 19.5C9.34375 24.375 12.5938 28.4375 12.5938 28.4375L28.4375 28.4375Z"
+                            fill="#FBD800" />
+                        <path
+                            d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
+                            fill="#FBD800" />
+                    </svg>
+                    <p class="slider__review">Я переехал из своего поселка в поисках работы, работадатели обманули, я
+                        остался без денег, назанимался денег у микрокредитов, но я случайно увидел эту рекламу в
+                        интернете и решил попробовать, теперь я финансово не зависимый человек, спокойно обеспечиваю
+                        себя и отправляю деньги домой</p>
+                    <p class="slider__name">Кудрявцев Никита</p>
+                    <p class="slider__date">Пользователь с Апреля 2023</p>
+                </div>
             </div>
 
-            <!-- <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
-            <div class="slider-controls">
-                <span id="current-slide">1</span> из <span id="total-slides">4</span>
-            </div> -->
             <div>
                 <ul class="slider__buttonsHolder">
                     <a href="#slider" role="button" data-slide="prev">
@@ -416,27 +458,15 @@
                     <li class="slider__numberActive"><span id="current-slide" class="slider__numberActive">1</span> of
                         <span id="total-slides" class="slider__numberActive">4</span>
                     </li>
-                    <li><img src="./images/ArrowRight.svg" alt="ArrowRight"></li>
+
+                    <a href="#slider" role="button" data-slide="next">
+                        <li><img src="./images/ArrowRight.svg" alt="ArrowRight"></li>
+                    </a>
                 </ul>
             </div>
         </div>
     </div>
     </div>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-     <script>
-        $(document).ready(function () {
-            $('#slider').on('slid.bs.carousel', function () {
-                var currentIndex = $('#slider .active').index() + 1;
-                $('#current-slide').text(currentIndex);
-            });
-
-            var totalSlides = $('.carousel-item').length;
-            $('#total-slides').text(totalSlides);
-        });
-    </script>  -->
 
     <section>
         <!-- Форма -->
@@ -517,9 +547,25 @@
     <script src="./js/main.js"></script>
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#slider').on('slid.bs.carousel', function () {
+                var currentIndex = $('#slider .active').index() + 1;
+                $('#current-slide').text(currentIndex);
+            });
+
+            var totalSlides = $('.carousel-item').length;
+            $('#total-slides').text(totalSlides);
+        });
+    </script>
 
 
 </body>
