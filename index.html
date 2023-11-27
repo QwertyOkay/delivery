@@ -209,6 +209,9 @@
 
         .slider__background {
             position: absolute;
+            top: -3%;
+            left: 11%;
+            z-index: -1;
         }
 
         #slider {
@@ -292,6 +295,11 @@
             line-height: 120%;
             /* 21.6px */
         }
+
+        .carousel-inner {
+
+            overflow: visible;
+        }
     </style>
 
 </head>
@@ -359,7 +367,7 @@
                 <div class="carousel-item active">
                     <div class="shadowCustom">
                         <img src="./images/1.png" class="d-block w-100 slider-img" alt="Slide 1">
-                        <!-- <img src="./images/Background.svg" class="slider__background" alt=""> -->
+                        <img src="./images/Background.svg" class="slider__background" alt="">
                     </div>
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
@@ -406,7 +414,8 @@
                     </a>
 
                     <li class="slider__numberActive"><span id="current-slide" class="slider__numberActive">1</span> of
-                        <span id="total-slides" class="slider__numberActive">4</span></li>
+                        <span id="total-slides" class="slider__numberActive">4</span>
+                    </li>
                     <li><img src="./images/ArrowRight.svg" alt="ArrowRight"></li>
                 </ul>
             </div>
