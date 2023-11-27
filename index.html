@@ -9,18 +9,20 @@
     <link rel="stylesheet" href="css/intlTelInput.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=PT+Serif:wght@400;700&display=swap');
+
 
         .header {
-            height: 435px;
-            background-color: #f8f9fa;
+            /* height: 435px; */
+            background: #FBD800;
             /* Цвет фона хедера */
-            padding: 22px 15px;
+            padding: 15px 22px 0px;
             /* Внутренний отступ внутри хедера */
             box-sizing: border-box;
         }
 
         .header-content {
-            height: 390px;
+            /* height: 390px; */
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,7 +30,7 @@
         }
 
         body {
-            padding-top: 56px;
+            /* padding-top: 56px; */
             /* Высота хедера (56px) + отступ сверху */
             /* background: #FBD800; */
         }
@@ -90,6 +92,20 @@
             border: none;
         }
 
+        .navbar-light .navbar-toggler-icon {
+            background-image: url(./images/nav.png);
+        }
+
+        .navbar-toggler-icon {
+            display: inline-block;
+            width: 47.5px;
+            height: 25px;
+        }
+
+        .navbar-toggler {
+            padding: 28px 0px 30px 9px;
+        }
+
         p {
             margin-bottom: 0px;
         }
@@ -111,6 +127,72 @@
         .width {
             width: 100%;
         }
+
+        .header__title {
+            color: #191818;
+            text-align: center;
+            font-family: PT Serif;
+            font-size: 57px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            /* 68.4px */
+            text-transform: uppercase;
+        }
+
+        .header__p {
+            color: #191818;
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%;
+            /* 43.2px */
+            text-transform: uppercase;
+            margin-top: 25px;
+        }
+
+        .header__p-bold {
+            color: #191818;
+            font-family: Open Sans;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+
+        .header__contact {
+            color: #191818;
+            text-align: center;
+            font-family: Open Sans;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            /* 31.2px */
+            text-transform: uppercase;
+            margin-top: 49px;
+                z-index: 5;
+        }
+
+        .header__imgBox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 137px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 137px;
+    margin-top: -130px;
+        }
+
+        .header__socialHolder {
+            z-index: -1;
+            margin-top: -47px;
+        }
     </style>
 
 </head>
@@ -118,7 +200,7 @@
 <body>
 
     <!-- Навигационная панель -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light ">
         <!-- <a class="navbar-brand" href="#">Логотип</a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -147,13 +229,27 @@
     <div class="header">
         <div class="header-content">
             <!-- Контент внутри хедера -->
-            <h1>Работа в твоем городе</h1>
-            <p>Если ты хочешь координально
+            <div>
+                <img src="./images/Ellipse.png" alt="Hero">
+            </div>
+            <h1 class="header__title">Работа в твоем городе</h1>
+            <p class="header__p">Если ты хочешь координально
                 изменить свою жизнь и
-                зарабатывать от 20 000 рублей в день</p>
-            <p>свяжись с нами удобным для тебя способом</p>
+                зарабатывать от <span class="header__p-bold">20 000 рублей в день</span></p>
+            <p class="header__contact">свяжись с нами удобным для тебя способом</p>
         </div>
     </div>
+
+     <div class="header__socialHolder">
+                <svg xmlns="http://www.w3.org/2000/svg" width="" height="" viewBox="0 0 390 188" fill="none">
+                    <path d="M0 0H390V188L239.9 64.1659C214.082 42.8655 176.797 42.8227 150.93 64.0635L0 188V0Z"
+                        fill="#FBD800" />
+                </svg>
+            </div>
+            <div class="header__imgBox">
+                    <a href=""><img src="./images/TelegramApp.png" alt="Telegram"></a>
+                     <a href=""><img src="./images/WhatsApp.png" alt="WhatsApp"></a>
+                </div>
 
     <section>
         <!-- Форма -->
@@ -184,7 +280,7 @@
         </form> -->
 
         <form class="form-registration form-container" data-id="0" action="./success.php?subid={subid}" method="post">
-             <div class="form-header">Ваши контакты</div>
+            <div class="form-header">Ваши контакты</div>
             <div class="form-group">
                 <input type="text" required="" placeholder="Имя*" name="f_name" class="form-name">
                 <div class="invalid-feedback">Ваше имя слишком короткое (что
