@@ -26,7 +26,6 @@
   margin: 0px auto;
   display: flex;
   width: 350px;
-  /* height: 420px; */
   padding: 24px 20px 20px 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -36,14 +35,23 @@
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
 
   background-color: #f8f9fa;
-  /* Цвет фона формы */
   padding: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-
   gap: 19.4px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-container {
+    width: 766px;
+    /* height: 436px; */
+    padding: 12px 52px;
+    border-radius: 20px;
+    border-top: 4px solid #2b758d;
+    background: var(--tinkoff-trade-online-nero, #fff);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .form-header {
@@ -54,6 +62,17 @@
   font-weight: 400;
   line-height: 32.76px;
   /* 134.815% */
+}
+
+@media screen and (min-width: 1200px) {
+  .form-header {
+    color: var(--tinkoff-trade-online-mine-shaft, #333);
+    font-family: Open Sans;
+    font-size: 34.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px; /* 133.721% */
+  }
 }
 
 .form-group {
@@ -87,12 +106,38 @@ form .form-group input:not([type="checkbox"]) {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  form .form-group input:not([type="checkbox"]) {
+    width: 662px;
+    padding: 17px;
+
+    &::placeholder {
+      color: var(--tinkoff-trade-online-dusty-gray, #999);
+      font-family: Open Sans;
+      font-size: 19.2px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
 .form-text {
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
   gap: 20px;
   flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .form__boxCustom {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 19.4px !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
 }
 
 .submit-button {
@@ -337,9 +382,22 @@ li {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  max-width: 350px;
+  width: 350px;
   margin: 0px auto;
   margin-bottom: 15.5px;
+}
+
+@media screen and (min-width: 1200px) {
+  #sectionForm h2 {
+    width: 1078px;
+    color: #2b758d;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 69.12px; /* 197.486% */
+  }
 }
 
 #sectionForm {
@@ -351,6 +409,12 @@ li {
   width: 310px;
   height: 1px;
   background: var(--tinkoff-trade-online-iron, #dddfe0);
+}
+
+@media screen and (min-width: 1200px) {
+  .lineForm {
+    width: 662px;
+  }
 }
 
 form .form-group input:not([type="checkbox"]) {
