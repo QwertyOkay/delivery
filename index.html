@@ -79,17 +79,17 @@
     <!-- Слайдер -->
 
     <div class="header-content">
-
         <div id="slider" class="carousel slide" data-ride="carousel">
 
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active slider__flexHolder">
                     <div class="shadowCustom">
                         <img src="./images/1.png" class="d-block w-100 slider-img" alt="Slide 1">
                         <img src="./images/Background.svg" class="slider__background" alt="">
                     </div>
 
-                    <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 65 65" fill="none">
                         <path
                             d="M28.4375 28.4375L28.4375 56.875L3.8147e-06 56.875L1.2931e-06 28.0313C-4.11647e-07 8.53126 18.2812 6.09376 18.2812 6.09376L20.7187 11.7813C20.7187 11.7813 12.5937 13 10.9687 19.5C9.34375 24.375 12.5938 28.4375 12.5938 28.4375L28.4375 28.4375Z"
                             fill="#FBD800" />
@@ -101,6 +101,8 @@
                         оказалось правдой, уже через два месяца я приобрел автомобиль</p>
                     <p class="slider__name">Игорь Орлов</p>
                     <p class="slider__date">Пользователь с Апреля 2023</p>
+                    </div>
+                    
                 </div>
 
                 <div class="carousel-item">
@@ -186,6 +188,7 @@
         </div>
     </div>
 
+    <!-- Линия под Слайдером -->
     <div class="lineSVG"><svg xmlns="http://www.w3.org/2000/svg" width="340" height="2" viewBox="0 0 340 2" fill="none">
             <path d="M1.5 1H339" stroke="#ABA6A6" stroke-width="2" stroke-linecap="round" />
         </svg>
@@ -315,7 +318,7 @@
     <script src="./js/main.js"></script>
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
@@ -333,7 +336,7 @@
             var totalSlides = $('.carousel-item').length;
             $('#total-slides').text(totalSlides);
         });
-    </script>
+    </script> -->
 
 
 </body>
