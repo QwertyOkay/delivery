@@ -175,6 +175,20 @@ p {
   margin-top: 25px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__p {
+    color: #191818;
+    text-align: right;
+    font-family: Open Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%; /* 43.2px */
+    text-transform: uppercase;
+    width: 745px;
+  }
+}
+
 .header__p-bold {
   color: #191818;
   font-family: Open Sans;
@@ -199,6 +213,12 @@ p {
   z-index: 5;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    margin-top: 5px;
+  }
+}
+
 .header__imgBox {
   display: flex;
   justify-content: center;
@@ -211,9 +231,22 @@ p {
   margin-top: -130px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__imgBox {
+    gap: 308px;
+    margin-top: -160px;
+  }
+}
+
 .header__socialHolder {
   z-index: -1;
   margin-top: -47px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__socialHolder {
+    margin-top: 0px;
+  }
 }
 
 .slider-container {
@@ -474,5 +507,51 @@ form .form-group {
 @media screen and (min-width: 1200px) {
   .collapse {
     margin-right: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__img {
+    width: 483px;
+    height: 483px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 76px;
+  }
+}
+
+.header__svgMob {
+  display: block;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__svgMob {
+    display: none;
+  }
+}
+
+.header__svgDesk {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .header__svgDesk {
+    display: block;
   }
 }
