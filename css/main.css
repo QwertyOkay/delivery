@@ -18,9 +18,9 @@
   align-items: center;
 }
 
-body {
+/* body {
   background: #fbd800;
-}
+} */
 
 .form-container {
   margin: 0px auto;
@@ -241,14 +241,15 @@ p {
 @media screen and (min-width: 1200px) {
   .header__imgBox {
     gap: 308px;
-    margin-top: -160px;
+    /* margin-top: -160px; */
+    margin-top: -12.5%;
   }
 }
 
 .header__socialHolder {
   z-index: -1;
   margin-top: -47px;
-  background: #fff;
+  /* background: #fff; */
 }
 
 @media screen and (min-width: 1200px) {
@@ -505,9 +506,9 @@ form .form-group {
     gap: 50px;
   }
 }
-.navbar {
+/* .navbar {
   background: #fff;
-}
+} */
 
 @media screen and (min-width: 1200px) {
   .navbar {
