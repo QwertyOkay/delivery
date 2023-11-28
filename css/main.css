@@ -434,3 +434,45 @@ form .form-group input:not([type="checkbox"]) {
 form .form-group {
   margin: 0px;
 }
+
+.active {
+  color: var(--gray-900, #212121);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.54px;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: var(--gray-600, #757575);
+
+  /* Button Bold */
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 18px */
+  letter-spacing: 0.54px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-nav {
+    gap: 56px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar {
+    padding-right: 210px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .collapse {
+    margin-right: 56px;
+  }
+}
