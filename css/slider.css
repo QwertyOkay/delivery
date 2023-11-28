@@ -128,16 +128,6 @@
   /* 21.6px */
 }
 
-/* @media screen and (min-width: 1200px) {
-  .slider__flexHolder {
-    display: flex;
-    flex-direction: row-reverse !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 116px;
-  }
-} */
-
 @media screen and (min-width: 1200px) {
   .slider__flexHolder--active {
     display: flex !important;
@@ -157,6 +147,8 @@
 @media screen and (min-width: 1200px) {
   .slider__buttonsMargin {
     margin-top: -50px;
+    z-index: 9999;
+    position: relative;
   }
 }
 
