@@ -311,9 +311,22 @@ li {
   gap: 125px;
 }
 
+@media screen and (min-width: 1200px) {
+  .faq__holder {
+    flex-direction: row;
+    gap: 76px;
+  }
+}
+
 .rotate180 {
   transform: rotate(180deg);
-  margin-top: 105px;
+  margin-top: 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .rotate180 {
+    transform: none;
+  }
 }
 
 #sectionForm h2 {
