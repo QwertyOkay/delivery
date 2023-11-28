@@ -208,6 +208,11 @@ p {
   border: none;
 }
 
+.btn-primary:hover,
+.submit-button:hover {
+  background: #40c351 !important;
+}
+
 .width {
   width: 100%;
 }
