@@ -39,7 +39,8 @@
                 </li>
             </ul>
         </div>
-        <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#exampleModal" onclick="scrollToSection('sectionForm')">Присоединиться</button>
+        <button class="btn btn-primary ml-2" data-toggle="modal" data-target="#exampleModal"
+            onclick="scrollToSection('sectionForm')">Присоединиться</button>
     </nav>
 
     <!-- Хедер -->
@@ -76,7 +77,7 @@
 
     <div class="header__imgBox">
         <a href=""><img src="./images/TelegramApp.png" alt="Telegram"></a>
-        <a href=""><img src="./images/WhatsApp.png" alt="WhatsApp"></a>
+        <a href="https://api.whatsapp.com/send?phone=79997266350"><img src="./images/WhatsApp.png" alt="WhatsApp"></a>
     </div>
 
     <!-- Слайдер -->
@@ -124,9 +125,11 @@
                                 d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
                                 fill="#FBD800" />
                         </svg>
-                        <p class="slider__review">У нас в семье 6 детей, я самый старший, мы выросли в маленькой хрущевке и
-                        я всегда мечтал подарить маме и братьям новую просторную квартиру, конечно пришлось потрудиться,
-                        но уже через год я добился своей цели</p>
+                        <p class="slider__review">У нас в семье 6 детей, я самый старший, мы выросли в маленькой
+                            хрущевке и
+                            я всегда мечтал подарить маме и братьям новую просторную квартиру, конечно пришлось
+                            потрудиться,
+                            но уже через год я добился своей цели</p>
                         <p class="slider__name">Константин Беляев</p>
                         <p class="slider__date">Пользователь с Марта 2023</p>
                     </div>
@@ -148,8 +151,9 @@
                                 d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
                                 fill="#FBD800" />
                         </svg>
-                        <p class="slider__review">Раньше я даже и мечтать не мог, что смогу позволить себе отпуск в Сочи,
-                        работал на заводе как проклятый от звонка до звонка. Теперь моя жизнь координально друг</p>
+                        <p class="slider__review">Раньше я даже и мечтать не мог, что смогу позволить себе отпуск в
+                            Сочи,
+                            работал на заводе как проклятый от звонка до звонка. Теперь моя жизнь координально друг</p>
                         <p class="slider__name">Григорий Марков</p>
                         <p class="slider__date">Пользователь с Июня 2023</p>
                     </div>
@@ -171,10 +175,11 @@
                                 d="M65 28.4375L65 56.875L36.5625 56.875L36.5625 28.0313C36.5625 8.53126 54.8437 6.09376 54.8437 6.09376L57.2812 11.7813C57.2812 11.7813 49.1562 13 47.5312 19.5C45.9062 24.375 49.1562 28.4375 49.1562 28.4375L65 28.4375Z"
                                 fill="#FBD800" />
                         </svg>
-                        <p class="slider__review">Я переехал из своего поселка в поисках работы, работадатели обманули, я
-                        остался без денег, назанимался денег у микрокредитов, но я случайно увидел эту рекламу в
-                        интернете и решил попробовать, теперь я финансово не зависимый человек, спокойно обеспечиваю
-                        себя и отправляю деньги домой</p>
+                        <p class="slider__review">Я переехал из своего поселка в поисках работы, работадатели обманули,
+                            я
+                            остался без денег, назанимался денег у микрокредитов, но я случайно увидел эту рекламу в
+                            интернете и решил попробовать, теперь я финансово не зависимый человек, спокойно обеспечиваю
+                            себя и отправляю деньги домой</p>
                         <p class="slider__name">Кудрявцев Никита</p>
                         <p class="slider__date">Пользователь с Апреля 2023</p>
                     </div>
@@ -205,13 +210,15 @@
 
     <!-- Линия под Слайдером -->
     <div class="lineSVG">
-        <svg xmlns="http://www.w3.org/2000/svg" width="340" height="2" viewBox="0 0 340 2" fill="none" class="header__svgMob">
-        <path d="M1.5 1H339" stroke="#ABA6A6" stroke-width="2" stroke-linecap="round" />
+        <svg xmlns="http://www.w3.org/2000/svg" width="340" height="2" viewBox="0 0 340 2" fill="none"
+            class="header__svgMob">
+            <path d="M1.5 1H339" stroke="#ABA6A6" stroke-width="2" stroke-linecap="round" />
         </svg>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="2" viewBox="0 0 1132 2" fill="none" class="header__svgDesk">
-  <path d="M1 1H1131" stroke="#E0E0E0" stroke-linecap="round"/>
-</svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="2" viewBox="0 0 1132 2" fill="none"
+            class="header__svgDesk">
+            <path d="M1 1H1131" stroke="#E0E0E0" stroke-linecap="round" />
+        </svg>
     </div>
 
     <!-- Почему мы -->
@@ -245,17 +252,20 @@
 
         <div class="header__socialHolder rotate180">
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="2" viewBox="0 0 1132 2" fill="none" class="header__svgDesk">
-  <path d="M1 1H1131" stroke="#E0E0E0" stroke-linecap="round"/>
-</svg>
-            
-            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 390 188" fill="none" class="header__svgMob">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1132" height="2" viewBox="0 0 1132 2" fill="none"
+                class="header__svgDesk">
+                <path d="M1 1H1131" stroke="#E0E0E0" stroke-linecap="round" />
+            </svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 390 188" fill="none"
+                class="header__svgMob">
                 <path d="M0 0H390V188L239.9 64.1659C214.082 42.8655 176.797 42.8227 150.93 64.0635L0 188V0Z"
                     fill="#FBD800" />
             </svg>
 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1279 188" fill="none" class="header__svgDesk">
-            <path d="M1280 188H0V0L583.047 146.561C619.452 155.712 657.553 155.733 693.969 146.622L1280 0V188Z" fill="#FBD800"/>
+                <path d="M1280 188H0V0L583.047 146.561C619.452 155.712 657.553 155.733 693.969 146.622L1280 0V188Z"
+                    fill="#FBD800" />
             </svg>
         </div>
     </section>
@@ -294,7 +304,7 @@
 
         <form class="form-registration form-container" data-id="0" action="./success.php?subid={subid}" method="post">
 
-        
+
             <p class="form-header">Ваши контакты</p>
             <div class="form-group">
                 <input type="text" required="" placeholder="Имя*" name="f_name" class="form-name">
@@ -351,7 +361,7 @@
     <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> -->
 
     <!-- Подключение Bootstrap JS (необходимо для работы навигационной панели на мобильных устройствах) -->
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
@@ -370,36 +380,36 @@
     </script>
 
     <script>
-    function scrollToSection(sectionForm) {
-        var section = document.getElementById(sectionForm);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
+        function scrollToSection(sectionForm) {
+            var section = document.getElementById(sectionForm);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
         }
-    }
-</script>
+    </script>
 
 
 
-<script>
-    $(document).ready(function () {
-    // Ініціалізація слайдера
-    $('#slider').carousel();
+    <script>
+        $(document).ready(function () {
+            // Ініціалізація слайдера
+            $('#slider').carousel();
 
-    // Додавання активного класу до першого слайду, якщо він активний
-    $('#slider .carousel-item:first').addClass('slider__flexHolder--active');
+            // Додавання активного класу до першого слайду, якщо він активний
+            $('#slider .carousel-item:first').addClass('slider__flexHolder--active');
 
-    $('#slider').on('slide.bs.carousel', function (e) {
-        // Видалення активного класу перед анімацією слайду
-        $('.carousel-item').removeClass('slider__flexHolder--active');
-    });
+            $('#slider').on('slide.bs.carousel', function (e) {
+                // Видалення активного класу перед анімацією слайду
+                $('.carousel-item').removeClass('slider__flexHolder--active');
+            });
 
-    $('#slider').on('slid.bs.carousel', function (e) {
-        // Додавання активного класу після завершення анімації слайду
-        $('.carousel-item.active').addClass('slider__flexHolder--active');
-    });
-});
+            $('#slider').on('slid.bs.carousel', function (e) {
+                // Додавання активного класу після завершення анімації слайду
+                $('.carousel-item.active').addClass('slider__flexHolder--active');
+            });
+        });
 
-</script>
+    </script>
 
 </body>
 
