@@ -810,7 +810,7 @@ form.form-contact .form-group:not(:nth-child(5)) {
   }
 }
 
-button.form-button {
+/* button.form-button {
   width: 100%;
   padding: 15px;
   height: auto;
@@ -818,7 +818,7 @@ button.form-button {
   background-color: rgba(59, 130, 246, 1);
   border-radius: 0.5rem;
   color: #fff;
-}
+} */
 
 button.form-button.contact {
   display: flex !important;

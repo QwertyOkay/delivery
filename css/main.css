@@ -131,6 +131,16 @@ form .form-group input:not([type="checkbox"]) {
 }
 
 @media screen and (min-width: 1200px) {
+  .form-text {
+    flex-direction: row;
+    align-items: center;
+    margin: 0px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .form__boxCustom {
     display: flex !important;
     flex-direction: column !important;
@@ -153,6 +163,12 @@ form .form-group input:not([type="checkbox"]) {
   align-items: center;
   border-radius: 5px;
   background: #2b758d;
+}
+
+@media screen and (min-width: 1200px) {
+  .submit-button {
+    padding: 19px 31.44px 19px 31.64px;
+  }
 }
 
 .navbar-light .navbar-toggler {
@@ -429,6 +445,18 @@ form .form-group input:not([type="checkbox"]) {
   font-weight: 400;
   line-height: 16.38px; /* 150% */
   margin-top: -23px;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-text p {
+    color: var(--tinkoff-trade-online-raven, #79818c);
+    font-family: Inter;
+    font-size: 17.28px;
+    font-style: normal;
+    font-weight: 400;
+    width: 420px;
+    line-height: 25.92px;
+  }
 }
 
 form .form-group {
