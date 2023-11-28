@@ -378,6 +378,37 @@
     }
 </script>
 
+<!-- <script>
+    $('#slider').on('slide.bs.carousel', function (e) {
+    // Коли слайд починає пролистування, видаліть клас
+    $('.carousel-item').removeClass('slider__flexHolder');
+});
+
+$('#slider').on('slid.bs.carousel', function (e) {
+    // Коли слайд завершив пролистування, додайте клас назад до активного слайда
+    $('.carousel-item.active').addClass('slider__flexHolder');
+});
+
+</script> -->
+<script>
+    $(document).ready(function () {
+    // Додає клас до активного слайду при завантаженні сторінки
+    if ($('#slider .carousel-item:first').hasClass('active')) {
+        $('#slider .carousel-item:first').addClass('slider__flexHolder');
+    }
+
+    $('#slider').on('slide.bs.carousel', function (e) {
+        // Видаляє клас під час анімації слайда
+        $('.carousel-item').removeClass('slider__flexHolder');
+    });
+
+    $('#slider').on('slid.bs.carousel', function (e) {
+        // Додає клас назад до активного слайда після завершення анімації
+        $('.carousel-item.active').addClass('slider__flexHolder');
+    });
+});
+
+</script>
 
 </body>
 
