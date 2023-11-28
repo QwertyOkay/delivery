@@ -18,8 +18,9 @@
   align-items: center;
 }
 
-/* body {
-} */
+body {
+  background: #fbd800;
+}
 
 .form-container {
   margin: 0px auto;
@@ -247,6 +248,7 @@ p {
 .header__socialHolder {
   z-index: -1;
   margin-top: -47px;
+  background: #fff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -503,6 +505,9 @@ form .form-group {
     gap: 50px;
   }
 }
+.navbar {
+  background: #fff;
+}
 
 @media screen and (min-width: 1200px) {
   .navbar {
@@ -560,5 +565,6 @@ form .form-group {
 @media screen and (min-width: 1200px) {
   .header__svgDesk {
     display: block;
+    width: 100%;
   }
 }
