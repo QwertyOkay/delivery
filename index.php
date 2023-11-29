@@ -26,7 +26,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Главная</a>
+                    <a class="nav-link" href="/">Главная</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#faq">Наши клиенты</a>
@@ -76,7 +76,7 @@
     </div>
 
     <div class="header__imgBox">
-        <a href=""><img src="./images/TelegramApp.png" alt="Telegram"></a>
+        <a href="https://deliverycompany.site/ggwLk2NF?cost=$%7Bclick_cost%7D&external_id=$%7Btrackid%7D&creative_id=$%7Bcreative%7D&ad_campaign_id=$%7Bcampaign%7D&source=$%7Bsourceid%7D"><img src="./images/TelegramApp.png" alt="Telegram"></a>
         <a href="https://api.whatsapp.com/send?phone=79997266350"><img src="./images/WhatsApp.png" alt="WhatsApp"></a>
     </div>
 
